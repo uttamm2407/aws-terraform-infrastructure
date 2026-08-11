@@ -14,9 +14,9 @@ resource "aws_key_pair" "deployer" {
 
 resource "aws_instance" "web" {
   ami           = data.aws_ami.ubuntu.id
-  instance_type = "t3.micro"
+  instance_type = var.instance_type
 
-  subnet_id                   = aws_subnet.public.id
+  subnet_id                   = module.vpc.public_subnet_id
   vpc_security_group_ids      = [aws_security_group.web.id]
   associate_public_ip_address = true
 
@@ -33,7 +33,7 @@ resource "aws_instance" "web" {
               EOF
 
   tags = {
-    Name = "terraform-web-server"
+    Name = "${var.project_name}-web-server"
   }
 }
 
@@ -44,7 +44,7 @@ resource "aws_eip" "web" {
   domain = "vpc"
 
   tags = {
-    Name = "terraform-web-eip"
+    Name = "${var.project_name}-web-eip"
   }
 }
 

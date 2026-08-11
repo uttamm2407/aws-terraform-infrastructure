@@ -1,7 +1,7 @@
 resource "aws_security_group" "web" {
   name        = "terraform-web-sg"
   description = "Security group for Terraform web server"
-  vpc_id      = aws_vpc.main.id
+  vpc_id      = module.vpc.vpc_id
 
   ingress {
     description = "SSH"
