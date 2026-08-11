@@ -1,0 +1,22 @@
+# Terraform files
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# Terraform plan files
+*.tfplan
+
+# Sensitive files
+*.pem
+*.key
+*.pub
+
+# SSH
+.ssh/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
