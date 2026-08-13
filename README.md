@@ -659,9 +659,17 @@ Recommended screenshots for the repository:
 ### AWS
 
 - EC2 instance
+- 
+- <img width="1919" height="848" alt="image" src="https://github.com/user-attachments/assets/65fc6a84-44ae-43f1-a6a0-aa3021e2bc7e" />
+
 - VPC
+
+<img width="1911" height="846" alt="image" src="https://github.com/user-attachments/assets/82b3c7de-b619-43c0-bd48-fbd7b196ad03" />
+
 - Security Group
-- Elastic IP
+
+- <img width="1914" height="864" alt="image" src="https://github.com/user-attachments/assets/44c2b3c2-7ee6-4a3c-a63d-f01a36a398cb" />
+
 
 ### Terraform
 
