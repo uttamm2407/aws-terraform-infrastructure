@@ -1,14 +1,5 @@
 # SSH Key Pair
 
-resource "aws_key_pair" "deployer" {
-  key_name   = "terraform-key"
-  public_key = file("/home/uttam/.ssh/id_rsa.pub")
-
-  tags = {
-    Name = "terraform-key"
-  }
-}
-
 
 # EC2 Instance
 
@@ -20,7 +11,7 @@ resource "aws_instance" "web" {
   vpc_security_group_ids      = [aws_security_group.web.id]
   associate_public_ip_address = true
 
-  key_name = aws_key_pair.deployer.key_name
+  key_name = "terraform-key"
 
   iam_instance_profile = aws_iam_instance_profile.ec2_profile.name
 
