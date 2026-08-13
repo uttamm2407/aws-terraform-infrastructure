@@ -674,12 +674,20 @@ Recommended screenshots for the repository:
 ### Terraform
 
 - Terraform plan
+<img width="1919" height="554" alt="image" src="https://github.com/user-attachments/assets/7740dbdd-5538-404a-b3a0-b8f4f2fa6206" />
+
 - Terraform validate
+<img width="1887" height="506" alt="image" src="https://github.com/user-attachments/assets/6a82aa39-e69c-457c-a0bb-32bd80972467" />
+
 - Terraform module structure
+- <img width="1070" height="200" alt="image" src="https://github.com/user-attachments/assets/1f75d546-8ad8-4804-a39a-4caafb9db08a" />
+
 
 ### GitHub Actions
 
 - Successful Terraform CI workflow
+<img width="1910" height="818" alt="image" src="https://github.com/user-attachments/assets/646a9ec8-1dbb-4917-b815-f62ad95e29b9" />
+
 
 Suggested documentation folder:
 
